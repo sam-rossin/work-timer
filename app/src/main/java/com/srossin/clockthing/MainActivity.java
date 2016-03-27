@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mFocused != -1){
             mTimes[mFocused] += (SystemClock.uptimeMillis() - savedInstanceState.getLong(SYS_TIME));
+            mButtons[mFocused].setSelected(true);
         }
 
         updateUI();
